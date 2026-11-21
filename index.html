@@ -335,7 +335,7 @@ $('#start').onclick=()=>{started=true;$('#startov').style.display='none';sfx([52
 $('#reveal').onclick=()=>{go('s5');music(true)};  /* music starts from this user gesture */
 
 /* Screen 05: finale */
-$('#hb').innerHTML='HAPPY BIRTHDAY! 🌻'.split('').map((c,i)=>c===' '?' ':`<span style="animation-delay:${i*.07}s">${c}</span>`).join('');
+$('#hb').innerHTML='HAPPY BIRTHDAY! '.split('').map((c,i)=>c===' '?' ':`<span style="animation-delay:${i*.07}s">${c}</span>`).join('');
 const field=$('#field');
 [[11,38,.62,.55,3.4],[9,64,.42,.22,3],[6,96,.2,.0,2.6]].forEach(([n,s,bot,_,d],r)=>{
   for(let i=0;i<n;i++){const x=(i+.5+(Math.random()-.5)*.6)/n*100,e=document.createElement('div');
